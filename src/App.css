@@ -1,38 +1,72 @@
-.App {
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,td{
+  border: 1px solid black;
   text-align: center;
+  padding: 8px;
+}
+th {
+  background-color: rgb(117, 201, 250);
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td {
+  background-color: rgb(205, 235, 253);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pagination{
+  display: flex;
+  list-style: none;
 }
+li{
+  border: 1px solid grey;
+}
+.active{
+  background: rgb(23, 100, 200) !important;
+}
+.page-item{
+  cursor: pointer;
+  border: none;
+  padding: 10px 5px;
+  background: transparent;
+}
+.page-link{
+  padding: 5px;
+}
+/* .float-right{
+  float: right;
+} */
+.input-wrapper{
+  display: grid;
+  grid-template-columns: auto auto auto;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.forminput-input{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-bottom: 10px;
+}
+.forminput-input input{
+  height: 30px;
+  max-width: 300px;
+}
+.input-div{
+  width: 100%;
+}
+.input-div h1{
+  text-align: center;
+}
+.submit-button-div{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
+}
+.submit-button{
+  padding: 5px 20px;
+  font-size: 20px;
+  background: rgb(51, 215, 234);
+  border: none;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
